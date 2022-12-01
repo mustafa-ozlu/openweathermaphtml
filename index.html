@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body style="background-color: powderblue">
+    <div
+      style="
+        text-align: center;
+        text-indent: 0px;
+        padding: 0px 0px;
+        margin: 0px 0px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      "
+    >
+      <table width="100%" cellpadding="1" cellspacing="1">
+        <tr valign="middle">
+          <td style="width: 12%"></td>
+
+          <td
+            style="
+              font-weight: bold;
+              padding: 10px;
+              font-family: Verdana;
+              width: 16%;
+              background-color: bisque;
+            "
+            id="day1"
+          >
+            <br />
+          </td>
+          <td
+            style="
+              font-weight: bold;
+              padding: 10px;
+              font-family: Verdana;
+              width: 12%;
+            "
+            id="day2"
+          >
+            <br />
+          </td>
+          <td
+            style="
+              font-weight: bold;
+              padding: 10px;
+              font-family: Verdana;
+              width: 12%;
+            "
+            id="day3"
+          >
+            <br />
+          </td>
+          <td
+            style="
+              font-weight: bold;
+              padding: 10px;
+              font-family: Verdana;
+              width: 12%;
+            "
+            id="day4"
+          >
+            <br />
+          </td>
+          <td
+            style="
+              font-weight: bold;
+              padding: 10px;
+              font-family: Verdana;
+              width: 12%;
+            "
+            id="day5"
+          >
+            <br />
+          </td>
+          <td
+            style="
+              font-weight: bold;
+              padding: 10px;
+              font-family: Verdana;
+              width: 12%;
+            "
+            id="day6"
+          >
+            <br />
+          </td>
+          <td
+            style="
+              font-weight: bold;
+              padding: 10px;
+              font-family: Verdana;
+              width: 12%;
+            "
+            id="day7"
+          >
+            <br />
+          </td>
+        </tr>
+        <tr valign="middle">
+          <td>
+            <p
+              style="
+                text-align: center;
+                text-indent: 8px;
+                padding: 0px;
+                margin: 0px;
+                font-size: xx-large;
+              "
+            >
+              <span id="name"></span>
+            </p>
+          </td>
+          <td style="background-color: bisque" ;>
+            <img id="icourl" src="" height="128" width="128" /><br />
+          </td>
+          <td><img id="icourl2" src="" height="80" width="80" /><br /></td>
+          <td><img id="icourl3" src="" height="80" width="80" /><br /></td>
+          <td><img id="icourl4" src="" height="80" width="80" /><br /></td>
+          <td><img id="icourl5" src="" height="80" width="80" /><br /></td>
+          <td><img id="icourl6" src="" height="80" width="80" /><br /></td>
+          <td><img id="icourl7" src="" height="80" width="80" /><br /></td>
+        </tr>
+        <tr valign="middle">
+          <td>
+            <p
+              style="
+                text-align: center;
+                text-indent: 0px;
+                padding: 0px 0px;
+                margin: 0px 0px;
+                font-weight: bold;
+              "
+            >
+              <span>Hava Durumu</span>
+            </p>
+          </td>
+          <td style="background-color: bisque" id="main"><br /></td>
+          <td id="main2"><br /></td>
+          <td id="main3"><br /></td>
+          <td id="main4"><br /></td>
+          <td id="main5"><br /></td>
+          <td id="main6"><br /></td>
+          <td id="main7"><br /></td>
+        </tr>
+        <tr valign="middle">
+          <td>
+            <p
+              style="
+                text-align: center;
+                text-indent: 0px;
+                padding: 0px 0px;
+                margin: 5px 0px;
+                font-weight: bold;
+              "
+            >
+              <span>Sıcaklık °C</span>
+            </p>
+          </td>
+          <td style="background-color: bisque" id="temp"><br /></td>
+          <td id="temp2"><br /></td>
+          <td id="temp3"><br /></td>
+          <td id="temp4"><br /></td>
+          <td id="temp5"><br /></td>
+          <td id="temp6"><br /></td>
+          <td id="temp7"><br /></td>
+        </tr>
+        <tr valign="middle">
+          <td>
+            <p
+              style="
+                text-align: center;
+                text-indent: 0px;
+                padding: 0px 0px;
+                margin: 0px 0px;
+                font-weight: bold;
+              "
+            >
+              <span>Hissedilen °C</span>
+            </p>
+          </td>
+          <td style="background-color: bisque" id="feels_like"><br /></td>
+          <td id="feels_like2"><br /></td>
+          <td id="feels_like3"><br /></td>
+          <td id="feels_like4"><br /></td>
+          <td id="feels_like5"><br /></td>
+          <td id="feels_like6"><br /></td>
+          <td id="feels_like7"><br /></td>
+        </tr>
+        <tr valign="middle">
+          <td>
+            <p
+              style="
+                text-align: center;
+                text-indent: 0px;
+                padding: 0px 0px;
+                margin: 0px 0px;
+                font-weight: bold;
+              "
+            >
+              <span>En Yüksek °C</span>
+            </p>
+          </td>
+          <td style="background-color: bisque" id="temp_max"><br /></td>
+          <td id="temp_max2"><br /></td>
+          <td id="temp_max3"><br /></td>
+          <td id="temp_max4"><br /></td>
+          <td id="temp_max5"><br /></td>
+          <td id="temp_max6"><br /></td>
+          <td id="temp_max7"><br /></td>
+        </tr>
+        <tr valign="middle">
+          <td>
+            <p
+              style="
+                text-align: center;
+                text-indent: 0px;
+                padding: 0px 0px;
+                margin: 0px 0px;
+                font-weight: bold;
+              "
+            >
+              <span>En Düşük °C</span>
+            </p>
+          </td>
+          <td style="background-color: bisque" id="temp_min"><br /></td>
+          <td id="temp_min2"><br /></td>
+          <td id="temp_min3"><br /></td>
+          <td id="temp_min4"><br /></td>
+          <td id="temp_min5"><br /></td>
+          <td id="temp_min6"><br /></td>
+          <td id="temp_min7"><br /></td>
+        </tr>
+        <tr valign="middle">
+          <td>
+            <p
+              style="
+                text-align: center;
+                text-indent: 0px;
+                padding: 0px 0px;
+                margin: 0px 0px;
+                font-weight: bold;
+              "
+            >
+              <span>Basınç</span>
+            </p>
+          </td>
+          <td style="background-color: bisque" id="pressure"><br /></td>
+          <td id="pressure2"><br /></td>
+          <td id="pressure3"><br /></td>
+          <td id="pressure4"><br /></td>
+          <td id="pressure5"><br /></td>
+          <td id="pressure6"><br /></td>
+          <td id="pressure7"><br /></td>
+        </tr>
+        <tr valign="middle">
+          <td>
+            <p
+              style="
+                text-align: center;
+                text-indent: 0px;
+                padding: 0px 0px;
+                margin: 0px 0px;
+                font-weight: bold;
+              "
+            >
+              <span>Nem</span>
+            </p>
+          </td>
+          <td style="background-color: bisque" id="humidity"><br /></td>
+          <td id="humidity2"><br /></td>
+          <td id="humidity3"><br /></td>
+          <td id="humidity4"><br /></td>
+          <td id="humidity5"><br /></td>
+          <td id="humidity6"><br /></td>
+          <td id="humidity7"><br /></td>
+        </tr>
+        <tr valign="middle">
+          <td>
+            <p
+              style="
+                text-align: center;
+                text-indent: 0px;
+                padding: 0px 0px;
+                margin: 0px 0px;
+                font-weight: bold;
+              "
+            >
+              <span>Rüzgar Yönü/Hızı</span>
+            </p>
+          </td>
+          <td style="background-color: bisque" id="speed"><br /></td>
+          <td id="speed2"><br /></td>
+          <td id="speed3"><br /></td>
+          <td id="speed4"><br /></td>
+          <td id="speed5"><br /></td>
+          <td id="speed6"><br /></td>
+          <td id="speed7"><br /></td>
+        </tr>
+        <tr valign="middle">
+          <td>
+            <p
+              style="
+                text-align: center;
+                text-indent: 0px;
+                padding: 0px 0px;
+                margin: 0px 0px;
+                font-weight: bold;
+              "
+            >
+              <span>Gün Doğumu</span>
+            </p>
+          </td>
+          <td style="background-color: bisque" id="sunrise"><br /></td>
+          <td id="sunrise2"><br /></td>
+          <td id="sunrise3"><br /></td>
+          <td id="sunrise4"><br /></td>
+          <td id="sunrise5"><br /></td>
+          <td id="sunrise6"><br /></td>
+          <td id="sunrise7"><br /></td>
+        </tr>
+        <tr valign="middle">
+          <td>
+            <p
+              style="
+                text-align: center;
+                text-indent: 0px 0px;
+                padding: 0px 0px;
+                margin: 0px 0px;
+                font-weight: bold;
+              "
+            >
+              <span>Gün Batımı</span>
+            </p>
+          </td>
+          <td style="background-color: bisque" id="sunset"><br /></td>
+          <td id="sunset2"><br /></td>
+          <td id="sunset3"><br /></td>
+          <td id="sunset4"><br /></td>
+          <td id="sunset5"><br /></td>
+          <td id="sunset6"><br /></td>
+          <td id="sunset7"><br /></td>
+        </tr>
+      </table>
+    </div>
+    <div class="container">
+      <div class="h_iframe">
+        <iframe
+          src="https://api.genelpara.com/iframe/?symbol=para-birimleri&pb=USD,EUR,GBP,GA,BTC&stil=stil-1&renk=turquoise"
+          title="Döviz ve Altın Fiyatları"
+          frameborder="0"
+        ></iframe>
+        <center><i>Mustafa Özlü ©2022</i></center>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
