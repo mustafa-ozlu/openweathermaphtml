@@ -1,5 +1,5 @@
 city = "uskudar";
-apikey = "YOUR_OPENWEATHERAPIKEY";
+apikey = "6127b0e5bba71ee6af34dcb909a5bec9";
 lang = "tr";
 units = "metric";
 link =
