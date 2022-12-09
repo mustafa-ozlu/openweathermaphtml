@@ -1,5 +1,5 @@
 city = "uskudar";
-apikey = "6127b0e5bba71ee6af34dcb909a5bec9";
+apikey = "c4cc5223ad142b0cc00532f025c33a88";
 lang = "tr";
 units = "metric";
 link =
