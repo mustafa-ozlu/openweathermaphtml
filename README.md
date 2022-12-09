@@ -1,4 +1,4 @@
-# openweathermaphtml
+# openweathermapweb
 
 OpenWeatherMap sitesi üzerinden 7 günlük hava durumu
 
